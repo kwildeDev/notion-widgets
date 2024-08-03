@@ -37,7 +37,7 @@ body
     right: -30px;
     bottom: -30px;
     left: -30px;
-    background-color: rgba(255,255,255,0);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -53,7 +53,7 @@ body
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(255,255,255,0);
+    background-color: #fff;
     opacity: 0.51;
     z-index: 2;
 }
@@ -72,7 +72,7 @@ body
     right: 15px;
     left: 15px;
     padding: 13px 22px 10px 184px;
-    background-color: #fff;
+    background-color: #fff7f7;
     border-radius: 15px 15px 0 0;
     transition: 0.3s ease top;
     z-index: 1;
@@ -85,7 +85,7 @@ body
 
 #album-name
 {
-    color: darkblue;
+    color: #54576f;
     font-size: 17px;
     font-weight: bold;
 }
@@ -118,14 +118,14 @@ body
 {
     color: transparent;
     font-size: 11px;
-    background-color: #b8d5ff;
+    background-color: #ffe8ee;
     border-radius: 10px;
     transition: 0.3s ease all;
 }
 
 #track-time.active #current-time, #track-time.active #track-length
 {
-    color: darkblue;
+    color: #f86d92;
     background-color: transparent;
 }
 
@@ -138,7 +138,7 @@ body
 
 #s-area
 {
-    background-color:#b8d5ff;
+    background-color:#ffe8ee;
     cursor: pointer;
 }
 
@@ -166,7 +166,7 @@ body
 
 #ins-time, #s-hover
 {
-    background-color: darkblue;
+    background-color: #3b3d50;
 }
 
 #seek-bar
@@ -177,7 +177,7 @@ body
     bottom: 0;
     left: 0;
     width: 0;
-    background-color: darkblue;
+    background-color: #fd6d94;
     transition: 0.2s ease width;
     z-index: 1;
 }
@@ -186,7 +186,7 @@ body
 {
     position: relative;
     height: 100%;
-    background-color: darkblue;
+    background-color: #fff;
     box-shadow: 0 1px 5px #cecece;
     border-radius: 15px;
     z-index: 2;
@@ -222,7 +222,7 @@ body
     width: 20px;
     height: 20px;
     margin: -10px auto 0 auto;
-    background-color: darkblue;
+    background-color: #d6dee7;
     border-radius: 50%;
     box-shadow: inset 0 0 0 2px #fff;
     z-index: 2;
@@ -321,7 +321,7 @@ body
     width: 26px;
     height: 26px;
     padding: 25px;
-    background-color: darkblue;
+    background-color: #fff;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -329,7 +329,7 @@ body
 .button i
 {
     display: block;
-    color: darkblue;
+    color: #d6dee7;
     font-size: 26px;
     text-align: center;
     line-height: 1;
@@ -432,7 +432,7 @@ body
                     'https://raw.githubusercontent.com/Quynny810/music/main/%20How%20Sweet.mp3',
                     'https://raw.githubusercontent.com/Quynny810/music/main/%20Super%20Shy.mp3',
                     'https://raw.githubusercontent.com/Quynny810/music/main/%20Ditto.mp3',
-                    'https://raw.githubusercontent.com/Quynny810/music/main/%20Hype%20Boy.mp3'], 
+                    'https://raw.githubusercontent.com/Quynny810/music/main/%20Hype%20Boy.mp3'],
         playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
 
     function playPause()
