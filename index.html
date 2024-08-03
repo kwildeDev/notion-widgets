@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Varela+Round&display=swaps'><link rel="stylesheet" href="./style.css">
 
     <style>
       
@@ -14,7 +14,7 @@ body > iframe:first-child { display: none !important; }
 
 body
 {
-    font-family: Helvetica, Arial;
+    font-family: "Varela Round", sans-serif;
     margin: 0;
     background-color: #ffeff5;
 }
@@ -118,14 +118,14 @@ body
 {
     color: transparent;
     font-size: 11px;
-    background-color: #ffe8ee;
+    background-color: #b8d5ff;
     border-radius: 10px;
     transition: 0.3s ease all;
 }
 
 #track-time.active #current-time, #track-time.active #track-length
 {
-    color: #f86d92;
+    color: #b8d5ff;
     background-color: transparent;
 }
 
@@ -138,7 +138,7 @@ body
 
 #s-area
 {
-    background-color:#ffe8ee;
+    background-color:#b8d5ff;
     cursor: pointer;
 }
 
@@ -425,7 +425,7 @@ body
     $(function()
 {
     var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, 
-        albums = ['Supernatural','How Sweet','Super Shy','Hybe Boy','Ditto'], 
+        albums = ['Supernatural','How Sweet','Super Shy','Ditto','HypeBoy'], 
         trackNames = ['NewJeans','NewJeans','NewJeans','NewJeans','NewJeans'], 
         albumArtworks = ['_1','_2','_3','_4','_5'], 
         trackUrl = ['https://raw.githubusercontent.com/Quynny810/music/blob/main/%20Supernatural.mp3',
