@@ -37,7 +37,7 @@ body
     right: -30px;
     bottom: -30px;
     left: -30px;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -72,7 +72,7 @@ body
     right: 15px;
     left: 15px;
     padding: 13px 22px 10px 184px;
-    background-color: #f7fcff;
+    background-color: #fff;
     border-radius: 15px 15px 0 0;
     transition: 0.3s ease top;
     z-index: 1;
@@ -166,7 +166,7 @@ body
 
 #ins-time, #s-hover
 {
-    background-color: #3b3d50;
+    background-color: darkblue;
 }
 
 #seek-bar
@@ -186,7 +186,7 @@ body
 {
     position: relative;
     height: 100%;
-    background-color: #fff;
+    background-color: darkblue;
     box-shadow: 0 1px 5px #cecece;
     border-radius: 15px;
     z-index: 2;
@@ -222,7 +222,7 @@ body
     width: 20px;
     height: 20px;
     margin: -10px auto 0 auto;
-    background-color: #d6dee7;
+    background-color: darkblue;
     border-radius: 50%;
     box-shadow: inset 0 0 0 2px #fff;
     z-index: 2;
@@ -321,7 +321,7 @@ body
     width: 26px;
     height: 26px;
     padding: 25px;
-    background-color: #fff;
+    background-color: darkblue;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -425,7 +425,7 @@ body
     $(function()
 {
     var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, 
-        albums = ['Supernatural','How Sweet','Super Shy','Ditto','HypeBoy'], 
+        albums = ['⋆Supernatural⋆','⋆How Sweet⋆','⋆Super Shy⋆','⋆Ditto⋆','⋆HypeBoy⋆'], 
         trackNames = ['NewJeans','NewJeans','NewJeans','NewJeans','NewJeans'], 
         albumArtworks = ['_1','_2','_3','_4','_5'], 
         trackUrl = ['https://raw.githubusercontent.com/Quynny810/music/main/%20Supernatural.mp3',
