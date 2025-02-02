@@ -72,7 +72,7 @@ body
     right: 15px;
     left: 15px;
     padding: 13px 22px 10px 184px;
-    background-color: darkblue; /*change header color here*/
+    background-color: purple; /*change header color here*/
     border-radius: 18px 18px 0 0;
     transition: 0.3s ease top;
     z-index: 1;
@@ -329,7 +329,7 @@ body
 .button i
 {
     display: block;
-    color: darkblue; /*change play button color here*/
+    color: purple; /*change play button color here*/
     font-size: 26px;
     text-align: center;
     line-height: 1;
@@ -346,7 +346,7 @@ body
 
 .button:hover
 {
-    background-color: darkblue; /*change button hover color here*/
+    background-color: purple; /*change button hover color here*/
     border-radius: 18px;
 }
 
@@ -396,12 +396,12 @@ body
             </div>
             <div id="player-content">
                 <div id="album-art">
-                   <img src="https://raw.githubusercontent.com/Quynny810/music/main/5.jpeg" class="active" id="_1">
-                    <img src="https://raw.githubusercontent.com/Quynny810/music/main/2.jpg" id="_2">
-                    <img src="https://raw.githubusercontent.com/Quynny810/music/main/3.jpeg" id="_3">
-                    <img src="https://raw.githubusercontent.com/Quynny810/music/main/4.jpg" id="_4">
-                    <img src="https://raw.githubusercontent.com/Quynny810/music/main/1.jpeg" id="_5">
-                     <img src="https://raw.githubusercontent.com/Quynny810/music/main/6.jpg" id="_6">
+                   <img src="5.jpg" class="active" id="_1">
+                    <img src="2.jpg" id="_2">
+                    <img src="3.jpeg" id="_3">
+                    <img src="4.jpg" id="_4">
+                    <img src="1.jpeg" id="_5">
+                     <img src="6.jpg" id="_6">
                     <div id="buffer-box">Buffering ...</div>
                 </div>
                 <div id="player-controls">
@@ -424,24 +424,21 @@ body
             </div>
         </div>
     </div>
-
-
-<!-- <a href="https://www.youtube.com/channel/UC7hSS_eujjZOEQrjsda76gA/videos" target="_blank" id="ytd-url">My YouTube Channel</a> -->
   
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript">
     $(function()
 {
 var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, 
-        albums = ['⋆Hype Boy⋆','⋆How Sweet⋆','⋆Super Shy⋆','⋆Ditto⋆','⋆Supernatural⋆','⋆ETA⋆'], 
-        trackNames = ['NewJeans','NewJeans','NewJeans','NewJeans','NewJeans','NewJeans'], 
+        albums = ['⋆Wake Up⋆','⋆How Sweet⋆','⋆Super Shy⋆','⋆Ditto⋆','⋆Supernatural⋆','⋆ETA⋆'], 
+        trackNames = ['Julie and the Phantoms Cast','NewJeans','NewJeans','NewJeans','NewJeans','NewJeans'], 
         albumArtworks = ['_1','_2','_3','_4','_5','_6'], 
-        trackUrl = ['https://raw.githubusercontent.com/Quynny810/music/main/%20Hype%20Boy.mp3',
-                    'https://raw.githubusercontent.com/Quynny810/music/main/%20How%20Sweet.mp3',
-                    'https://raw.githubusercontent.com/Quynny810/music/main/%20Super%20Shy.mp3',
-                    'https://raw.githubusercontent.com/Quynny810/music/main/%20Ditto.mp3',
-                    'https://raw.githubusercontent.com/Quynny810/music/main/%20Supernatural.mp3', 
-                    'https://raw.githubusercontent.com/Quynny810/music/main/ETA.mp3'], 
+        trackUrl = ['https://open.spotify.com/embed/track/3gy83YfNaZOsAvkbVgD6IQ?utm_source=generator',
+                    '%20Sweet.mp3',
+                    '%20Super%20Shy.mp3',
+                    '%20Ditto.mp3',
+                    '%20Supernatural.mp3', 
+                    'ETA.mp3'], 
         playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
     function playPause()
     {
